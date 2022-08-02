@@ -44,7 +44,7 @@ def main():
     st.write(
         "You can check out EDA and Model Creation [here.]"
         "(https://github.com/DenysIvanilov/Portfolio-Projects/blob/main/"
-        "Medical%20Insurance%20Charges%20Regression/Notebook%20And%20Model/Medical_Insurance_Charges.ipynb)")
+        "MedicalInsuranceChargesRegression/NotebookAndModel/Medical_Insurance_Charges.ipynb)")
 
 
 if __name__ == "__main__":
