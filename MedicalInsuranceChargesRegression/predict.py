@@ -2,9 +2,9 @@ import numpy as np
 import pickle
 import pandas as pd
 
-model_filename = "C:/Users/suo/Desktop/Portfolio Projects/Medical Insurance Charges Regression/Notebook And " \
+model_filename = "/MedicalInsuranceChargesRegression/Notebook And " \
                  "Model/trained_model.pkl "
-scaler_filename = "C:/Users/suo/Desktop/Portfolio Projects/Medical Insurance Charges Regression/Notebook And " \
+scaler_filename = "/MedicalInsuranceChargesRegression/Notebook And " \
                   "Model/trained_scaler.pkl "
 
 loaded_model = pickle.load(open(model_filename, "rb"))
