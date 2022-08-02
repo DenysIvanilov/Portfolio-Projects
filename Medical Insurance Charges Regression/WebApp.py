@@ -1,25 +1,14 @@
-import pickle
-import pandas as pd
 import streamlit as st
 from predict import predict_charge
-
-# Load Model And Scaler
-model_filename = "C:/Users/suo/Desktop/Portfolio Projects/Medical Insurance Charges Regression/Notebook And " \
-                 "Model/trained_model.pkl "
-scaler_filename = "C:/Users/suo/Desktop/Portfolio Projects/Medical Insurance Charges Regression/Notebook And " \
-                  "Model/trained_scaler.pkl "
-
-loaded_model = pickle.load(open(model_filename, "rb"))
-loaded_scaler = pickle.load(open(scaler_filename, "rb"))
 
 
 # Streamlit App
 def main():
     st.title("Medical Insurance Price Prediction In USA")
 
-    age = int(st.slider("Select your age:", 18, 100))
-    bmi = float(st.text_input("Your BMI Index"))
-    children = int(st.text_input("Number of children covered by health insurance"))
+    age = st.slider("Select your age:", 18, 100)
+    bmi = st.text_input("Your BMI Index")
+    children = st.text_input("Number of children covered by health insurance")
     male_female = st.selectbox("Pick your sex", ["male", "female"])
     smoking = st.selectbox("Do you smoke?", ["Yes", "No"])
     region = st.selectbox("What region of USA do you live in?", ["Southeast", "Southwest",
@@ -44,12 +33,18 @@ def main():
     prediction = ""
 
     if st.button("Predict Price"):
-        data = {"age": [age], "bmi": [bmi], "children": [children], "sex_male": [male_female], "smoker_yes": [smoking],
+        data = {"age": [int(age)], "bmi": [float(bmi)], "children": [children], "sex_male": [male_female],
+                "smoker_yes": [int(smoking)],
                 "region_northwest": [regions_dict["Northwest"]],
                 "region_southeast": [regions_dict["Southeast"]], "region_southwest": [regions_dict["Southwest"]]}
         prediction = predict_charge(data)
 
     st.success(prediction)
+
+    st.write(
+        "You can check out EDA and Model Creation [here.]"
+        "(https://github.com/DenysIvanilov/Portfolio-Projects/blob/main/"
+        "Medical%20Insurance%20Charges%20Regression/Notebook%20And%20Model/Medical_Insurance_Charges.ipynb)")
 
 
 if __name__ == "__main__":
