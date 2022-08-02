@@ -26,3 +26,9 @@ To automate and ease the process of calculating insurance charges for insurance 
 - r2 score
 - MSE
 - RMSE
+
+#### Web Deployment:
+
+- Streamlit
+
+You can check out web app [here.](https://denysivanilov-po-medicalinsurancechargesregressionwebapp-eqty3k.streamlitapp.com/)
