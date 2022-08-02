@@ -2,8 +2,10 @@ import numpy as np
 import pickle
 import pandas as pd
 
-model_filename = "/NotebookAndModel/trained_model.pkl"
-scaler_filename = "/NotebookAndModel/trained_scaler.pkl"
+model_filename = "C:/Users/suo/Desktop/Portfolio Projects/MedicalInsuranceChargesRegression/" \
+                 "NotebookAndModel/trained_model.pkl"
+scaler_filename = "C:/Users/suo/Desktop/Portfolio Projects/MedicalInsuranceChargesRegression/" \
+                  "NotebookAndModel/trained_scaler.pkl"
 
 loaded_model = pickle.load(open(model_filename, "rb"))
 loaded_scaler = pickle.load(open(scaler_filename, "rb"))
