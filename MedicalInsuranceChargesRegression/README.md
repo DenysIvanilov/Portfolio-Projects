@@ -15,6 +15,7 @@ To automate and ease the process of calculating insurance charges for insurance 
 - Numpy
 - Seaborn 
 - Matplotlib 
+- Plotly
 
 #### Data Preprocessing and Model Creation:
 
