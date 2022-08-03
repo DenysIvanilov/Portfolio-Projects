@@ -44,7 +44,7 @@ def main():
     st.success(prediction)
 
     st.write(
-        "You can check out EDA and Model Creation [here.]"
+        "You can check out EDA and Model Creation notebook [here.]"
         "(https://github.com/DenysIvanilov/Portfolio-Projects/blob/main/"
         "MedicalInsuranceChargesRegression/NotebookAndModel/Medical_Insurance_Charges.ipynb)")
 
