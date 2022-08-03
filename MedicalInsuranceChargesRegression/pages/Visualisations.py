@@ -14,10 +14,11 @@ def main():
     st.subheader("Correlation Matrix")
     st.image(image=heatmap)
     st.write("Instantly, smoking is hugely correlated with a price of insurance. "
-             "Also, as we can see we have some positive correlation between age and charges,as well as bmi and charges."
-             "This means as either of the values rises,the other one will rise as well. "
-             "Let's look at the pairplot."
-             "Note: in the pairplot 0 in smoker represents 'Not a smoker' and 1 represents 'Is a smoker'")
+             " Also, as we can see we have some positive correlation between age and charges,"
+             "as well as bmi and charges."
+             " This means as either of the values rises,the other one will rise as well. "
+             "Let's look at the pairplot.")
+    st.write("Note: in the pairplot 0 in smoker represents 'Not a smoker' and 1 represents 'Is a smoker'")
     st.subheader("Pairplot")
     st.image(image=pairplot)
     st.write("Just as a confirmation, we can see that for lower BMI scores charges are lower. "
