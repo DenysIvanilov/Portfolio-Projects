@@ -31,4 +31,4 @@ To automate and ease the process of calculating insurance charges for insurance 
 
 - Streamlit
 
-You can check out web app [here.](https://denysivanilov-po-medicalinsurancechargesregressionwebapp-eqty3k.streamlitapp.com/)
+You can check out web app [here.](https://denysivanilov-po-medicalinsurancechargesregressionwebapp-9byoed.streamlitapp.com/)
