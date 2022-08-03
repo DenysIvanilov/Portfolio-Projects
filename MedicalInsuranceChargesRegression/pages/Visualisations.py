@@ -18,12 +18,11 @@ le.fit(data_encoded.region.drop_duplicates())
 data_encoded.region = le.transform(data_encoded.region)
 # *************************************************
 
-heatmap = sns.heatmap(sns.heatmap(data=data_encoded.select_dtypes(include=[np.number]).corr(), annot=True))
-
 
 def main():
     st.title("Visualisation and EDA of Medical Insurance Charges Data")
-
+    fig = plt.figure(figsize=(10, 8))
+    heatmap = sns.heatmap(sns.heatmap(data=data_encoded.select_dtypes(include=[np.number]).corr(), annot=True))
     st.pyplot(heatmap, caption="Instantly, smoking is hugely correlated with a price of insurance. "
                                "Also, as we can see we have some positive correlation between age and charges,"
                                "as well as bmi and charges. "
