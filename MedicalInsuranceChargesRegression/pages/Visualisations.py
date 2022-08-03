@@ -15,10 +15,10 @@ def main():
     st.image(image=heatmap)
     st.write("Instantly, smoking is hugely correlated with a price of insurance. "
              " Also, as we can see we have some positive correlation between age and charges,"
-             "as well as bmi and charges."
-             " This means as either of the values rises,the other one will rise as well. "
+             " as well as bmi and charges."
+             " This means as either of the values rises, the other one will rise as well. "
              "Let's look at the pairplot.")
-    st.write("Note: in the pairplot 0 in smoker represents 'Not a smoker' and 1 represents 'Is a smoker'")
+    st.write("Note: in the pairplot 0 in smoker represents 'Not a smoker' and 1 represents 'Is a smoker'.")
     st.subheader("Pairplot")
     st.image(image=pairplot)
     st.write("Just as a confirmation, we can see that for lower BMI scores charges are lower. "
@@ -27,7 +27,7 @@ def main():
     st.subheader("Distribution of Charges")
     st.image(image=dist1)
     st.image(image=dist2)
-    st.write("Women tend to pay less for insurance overall.")
+    st.write("It seems like women tend to pay less for insurance overall.")
     st.image(image=dist3)
     st.write("This is a very strong correlation between prices of insurance and being a smoker. Almost everyone who "
              "pays cheaper don't smoke.")
