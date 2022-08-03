@@ -31,13 +31,15 @@ def main():
             regions_dict[key] = 1
 
     prediction = ""
-
-    if st.button("Predict Price"):
-        data = {"age": [age], "bmi": [round(float(bmi), 2)], "children": [children], "sex_male": [male_female],
-                "smoker_yes": [smoking],
-                "region_northwest": [regions_dict["Northwest"]],
-                "region_southeast": [regions_dict["Southeast"]], "region_southwest": [regions_dict["Southwest"]]}
-        prediction = f"{round(predict_charge(data))}$"
+    try:
+        if st.button("Predict Price"):
+            data = {"age": [age], "bmi": [round(float(bmi), 2)], "children": [children], "sex_male": [male_female],
+                    "smoker_yes": [smoking],
+                    "region_northwest": [regions_dict["Northwest"]],
+                    "region_southeast": [regions_dict["Southeast"]], "region_southwest": [regions_dict["Southwest"]]}
+            prediction = f"{round(predict_charge(data))}$"
+    except ValueError:
+        st.write("Make you entered correct values.")
 
     st.success(prediction)
 
