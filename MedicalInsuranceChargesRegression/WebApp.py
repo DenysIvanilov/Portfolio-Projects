@@ -39,7 +39,7 @@ def main():
                     "region_southeast": [regions_dict["Southeast"]], "region_southwest": [regions_dict["Southwest"]]}
             prediction = f"{round(predict_charge(data))}$"
     except ValueError:
-        st.write("Make you entered correct values.")
+        st.warning("Make you entered correct values.")
 
     st.success(prediction)
 
