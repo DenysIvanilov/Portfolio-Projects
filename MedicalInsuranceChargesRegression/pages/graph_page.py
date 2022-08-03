@@ -11,3 +11,7 @@ def main():
                               "as well as bmi and charges. "
                               "This means as either of the values rises,"
                               "the other one will rise as well. Let's look at the pairplot.")
+
+
+if __name__ == "__main__":
+    main()
