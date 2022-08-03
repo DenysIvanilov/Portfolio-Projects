@@ -23,11 +23,7 @@ def main():
     st.title("Visualisation and EDA of Medical Insurance Charges Data")
     fig = plt.figure(figsize=(10, 8))
     sns.heatmap(sns.heatmap(data=data_encoded.select_dtypes(include=[np.number]).corr(), annot=True))
-    st.pyplot(fig, caption="Instantly, smoking is hugely correlated with a price of insurance. "
-                               "Also, as we can see we have some positive correlation between age and charges,"
-                               "as well as bmi and charges. "
-                               "This means as either of the values rises,"
-                               "the other one will rise as well. Let's look at the pairplot.")
+    st.pyplot(fig)
 
 
 if __name__ == "__main__":

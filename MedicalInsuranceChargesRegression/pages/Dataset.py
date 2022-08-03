@@ -8,6 +8,7 @@ def main():
     st.title("Dataset used for EDA and training the model")
 
     st.dataframe(data=data)
+    st.subheader("Features:")
     st.write(f"age: age of primary beneficiary")
     st.write(f"sex: insurance contractor gender, female, male")
     st.write(f"bmi: Body mass index, providing an understanding of body, weights that are "
