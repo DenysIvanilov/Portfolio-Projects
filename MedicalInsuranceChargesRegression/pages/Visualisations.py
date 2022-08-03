@@ -35,7 +35,7 @@ def main():
     st.write("Here we can see how age impacts prices.")
     st.image(image=age_smoke)
     st.write("And here is the same plot but for smokers vs non-smokers. Clearly smoking does have a great impact on the"
-             "charges.")
+             " charges.")
     st.caption("For more analysis and conclusion you can check out whole notebook [here.]"
                "(https://github.com/DenysIvanilov/Portfolio-Projects/blob/main/"
                "MedicalInsuranceChargesRegression/NotebookAndModel/Medical_Insurance_Charges.ipynb)")
