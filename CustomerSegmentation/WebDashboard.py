@@ -50,7 +50,7 @@ def main():
                                    color_continuous_scale=["orange", "red", "green", "blue"])
     st.plotly_chart(fig6)
 
-    fig7 = px.
+    #fig7 = px.
 
 if __name__ == "__main__":
     main()
