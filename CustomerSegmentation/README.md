@@ -27,4 +27,6 @@ Customer Segmentation helps business to modify products based on its target cust
 
 - Streamlit
 
-You can check out Interactive Web Dashboard [here.](https://denysivanilov-po-medicalinsurancechargesregressionwebapp-9byoed.streamlitapp.com/)
+You can check out Interactive Web Dashboard [here.](https://denysivanilov-deploy-webdashboard-4ukif5.streamlitapp.com/)
+
+<sub>Actual deployment is performed from cloned repo("deploy") due to streamlit cloud storage limitations.</sub>
