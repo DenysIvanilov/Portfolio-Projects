@@ -5,10 +5,10 @@ import plotly.figure_factory as ff
 import numpy as np
 
 # Dataframes for plotting
-original_data = pd.read_csv("CustomerSegmentation/NotebookAndModel/DATA/marketing_campaign.csv", sep="\t")
-no_clusters_PCA = pd.read_csv("CustomerSegmentation/NotebookAndModel/DATA/no_clusters_pca.csv")
-clustered_PCA = pd.read_csv("CustomerSegmentation/NotebookAndModel/DATA/clustered_pca.csv")
-clustered_data = pd.read_csv("CustomerSegmentation/NotebookAndModel/DATA/clustered_data.csv")
+original_data = pd.read_csv("/app/CustomerSegmentation/NotebookAndModel/DATA/marketing_campaign.csv", sep="\t")
+no_clusters_PCA = pd.read_csv("/app/CustomerSegmentation/NotebookAndModel/DATA/no_clusters_pca.csv")
+clustered_PCA = pd.read_csv("/app/CustomerSegmentation/NotebookAndModel/DATA/clustered_pca.csv")
+clustered_data = pd.read_csv("/app/CustomerSegmentation/NotebookAndModel/DATA/clustered_data.csv")
 
 
 def main():
