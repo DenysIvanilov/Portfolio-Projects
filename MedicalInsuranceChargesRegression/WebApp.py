@@ -4,6 +4,9 @@ from predict import predict_charge
 
 # Streamlit App
 def main():
+    st.set_page_config(
+        page_title="Medical Insurance"
+    )
     st.title("Medical Insurance Price Prediction In USA")
 
     age = st.slider("Select your age", 18, 100)
